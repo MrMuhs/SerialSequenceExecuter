@@ -52,7 +52,9 @@ Will start writing to a new logfile with timestamp AND the given text "logFileFo
 ## Build with
 
 For the serial port bindings the external project is used made by "Martin Gibson" (and contributers) - thanks for sharing.
+
 So the CommMG.au3 and commg.dll within the repo are imported from the forum thread:
 https://www.autoitscript.com/forum/topic/128546-serial-port-com-port-udf/
 The used version here is 2.83, which maybe outdated.
+
 Anyway, the copyright/licence of the authors remain how ever they are - i couldnt find information about it anywhere.
