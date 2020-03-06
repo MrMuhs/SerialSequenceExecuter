@@ -19,7 +19,7 @@
 #Region ### START Koda GUI section ### Form=Form1.kxf
 $Form1 = GUICreate("Form1", 629, 516, 308, 427)
 $Edit1 = GUICtrlCreateEdit("", 8, 32, 489, 409)
-GUICtrlSetData(-1, StringFormat("##some comment about what magic happens now\r\n#startnewlog\r\n#sleep#~#1000\r\nls /usr/bin/\r\n#sleep#~#1000\r\n#waitfor#some string to appear in serial\r\n#writemarker#~#some static marker text\r\nls /tmp\r\n#sleep#~#1000\r\n#exit"))
+GUICtrlSetData(-1, StringFormat("##some comment about what magic happens now\r\n#startnewlog\r\n#sleep#~#1000\r\nls /usr/bin/\r\n#sleep#~#1000\r\n#waitfor#~#some string to appear in serial\r\n#writemarker#~#some static marker text\r\nls /tmp\r\n#sleep#~#1000\r\n#exit"))
 GUICtrlSetResizing(-1, $GUI_DOCKLEFT+$GUI_DOCKRIGHT+$GUI_DOCKTOP+$GUI_DOCKBOTTOM)
 $btnOpenSerial = GUICtrlCreateButton("Open serial", 504, 32, 115, 25)
 GUICtrlSetResizing(-1, $GUI_DOCKRIGHT+$GUI_DOCKTOP+$GUI_DOCKWIDTH+$GUI_DOCKHEIGHT)
