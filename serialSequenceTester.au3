@@ -113,9 +113,11 @@ WEnd
 
 ; all the required functions below this
 Func AllDone()
-   _Commcloseport(true)
-   MsgBox(0, 'Port closed', 'Have a good one!')
-   Exit
+   If WinActive($maintitle) Then
+      _Commcloseport(true)
+      MsgBox(0, 'Port closed', 'Have a good one!')
+      Exit
+   EndIf
 EndFunc
 
 Func updateLogfileName($customTag = "serial")
